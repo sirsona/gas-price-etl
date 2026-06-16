@@ -3,8 +3,6 @@ from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
 
 load_dotenv()
-# Print to see what's loaded
-#
 
 
 class Settings(BaseSettings):
