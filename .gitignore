@@ -1,13 +1,6 @@
 # Virtual environment
 .venv/
 
-# Environment variables
-.env
-
-# Python cache
-__pycache__/
-*.py[cod]
-
 # Test cache
 .pytest_cache/
 
@@ -19,5 +12,25 @@ __pycache__/
 *.log
 logs/
 
-# OS files
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environment variables
+.env
+
+# Airflow
+airflow.db
+airflow.db-shm
+airflow.db-wal
+airflow.cfg
+logs/
+simple_auth_manager_passwords.json.generated
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
