@@ -7,23 +7,31 @@ structured format, and load it into a PostgreSQL database for analysis and repor
 
 ## Architecture
 
+```text
 External API
-|
-v
+     │
+     ▼
 Extract Task
-|
-v
+     │
+     ▼
 Transform Task
-|
-v
+     │
+     ▼
 Load Task
-|
-v
+     │
+     ▼
 PostgreSQL
+```
 
 The Airflow DAG orchestrates the workflow:
 
-extract -> transform -> load
+```text
+extract
+    ↓
+transform
+    ↓
+load
+```
 
 ## Setup
 
